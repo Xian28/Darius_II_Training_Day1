@@ -1,20 +1,44 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+    <ion-title>Home</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+<ion-content>
+  <ion-card routerLink="/recipe/1">
+    <ion-img alt="Adobo on plate" src="assets/img/Chicken_adobo.jpg">
+    </ion-img>
+    <ion-card-header>
+      <ion-card-title>Adobo</ion-card-title>
+      <ion-card-subtitle>Dish name</ion-card-subtitle>
+    </ion-card-header>
+  
+    <ion-card-content>
+      A Philippine dish of fish or meat usually marinated in a sauce containing vinegar and garlic, browned in fat, and simmered in the marinade. : a spicy marinade used in Latin American cuisine and usually containing vinegar, garlic, and chili peppers.
+    </ion-card-content>
+  </ion-card>
+  <ion-card routerLink="/recipe/2">
+    <ion-img alt="Tinola on plate" src="assets/img/tinola-2.jpg">
+    </ion-img>
+    <ion-card-header>
+      <ion-card-title>Tinola</ion-card-title>
+      <ion-card-subtitle>Dish name</ion-card-subtitle>
+    </ion-card-header>
+  
+    <ion-card-content>
+      A Filipino soup usually served as a main entrée with white rice.[1] Traditionally, this dish is cooked with chicken or fish, wedges of papaya, and leaves of the siling labuyo chili pepper in broth flavored with ginger, onions and fish sauce.
+    </ion-card-content>
+  </ion-card>
+  <ion-card routerLink="/recipe/3">
+    <ion-img alt="Sinigang on plate" src="assets/img/sinigang.jpg">
+    </ion-img>
+    <ion-card-header>
+      <ion-card-title>Sinigang</ion-card-title>
+      <ion-card-subtitle>Dish name</ion-card-subtitle>
+    </ion-card-header>
+  
+    <ion-card-content>
+      A Filipino soup or stew characterized by its sour and savory taste. It is most often associated with tamarind (Filipino: sampalok), although it can use other sour fruits and leaves as the souring agent. It is one of the more popular dishes in Filipino cuisine.
+    </ion-card-content>
+  </ion-card>
 </ion-content>

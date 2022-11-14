@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons 
+      routerLink="/home"
+      slot="start">
+      <ion-back-button default-href="#"></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{name}} Recipe</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <img 
+    alt={{name}} 
+    src={{img}}
+    style="padding: 1em 1em 0em 1em"
+  />
+  <!-- <ion-text>
+    <h1 
+      style="padding-left: 1em"
+    >
+      {{name}}
+    </h1>
+  </ion-text> -->
+  <ion-text>
+    <h6 
+      style="padding: 0em 1em; color: #777"
+    >
+      {{instruction}}
+    </h6>
+  </ion-text>
+</ion-content>
