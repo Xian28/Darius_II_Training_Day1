@@ -7,6 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomePage implements OnInit {
 
+  actionName = "click me!"
+  isTrue = true
+  time = new Date()
+  
+  onClick() {this.isTrue = !this.isTrue}
+
   constructor() { }
 
   ngOnInit() {

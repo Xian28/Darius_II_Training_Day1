@@ -1,0 +1,65 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Employees</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-card
+      *ngFor="let employee of employees;"
+    >
+      <ion-card-content>
+        <ion-text color="primary">
+          <h1
+            style="display: flex;"
+          >
+            {{employee.name}}
+          </h1>
+        </ion-text>
+        <ion-text>
+          <h3
+            style="display: flex;"
+          >
+            <ion-icon 
+              name="person-outline"
+              style="padding-right: 10px"
+            ></ion-icon>
+            {{employee.username}}
+          </h3>
+        </ion-text>
+        <ion-text>
+          <h3
+            style="display: flex;"
+          >
+            <ion-icon 
+              name="mail-outline"
+              style="padding-right: 10px"
+            ></ion-icon>
+            {{employee.email}}
+          </h3>
+        </ion-text>
+        <ion-text>
+          <h3
+            style="display: flex;"
+          >
+            <ion-icon 
+              name="call-outline"
+              style="padding-right: 10px"
+            ></ion-icon>
+            {{employee.phone}}
+          </h3>
+        </ion-text>
+        <ion-text>
+          <h3
+            style="display: flex;"
+          >
+            <ion-icon 
+              name="globe-outline"
+              style="padding-right: 10px"
+            ></ion-icon>
+            {{employee.website}}
+          </h3>
+        </ion-text>
+      </ion-card-content>
+    </ion-card>
+</ion-content>
